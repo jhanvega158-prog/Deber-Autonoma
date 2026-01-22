@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM | Web Moderna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet"/>
+</head>
+
+<body class="bg-[#0B1020] text-gray-200">
+
+<!--para la portada-->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+    <!-- Imagen de fondo -->
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Gradiente -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#0B1020]/80 via-[#0B1020]/60 to-purple-900/40"></div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 text-center max-w-4xl px-8">
+        <h1 class="text-6xl font-extrabold mb-6">
+            Document Object Model
+        </h1>
+
+        <p class="text-2xl text-gray-300 mb-10">
+            Una experiencia visual sobre la base de la web moderna
+        </p>
+
+        <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 inline-block">
+            <p class="mb-4 text-lg text-gray-300">
+                Para un recorrido más armónico
+            </p>
+
+            <button
+                class="px-6 py-3 rounded-full bg-cyan-500/80 cursor-default text-black font-semibold">
+                ▶ Escuchar música
+            </button>
+        </div>
+    </div>
+</section>
+
+<!--HERO-->
+<section class="relative overflow-hidden">
+    <div class="absolute -top-32 -right-32 w-[600px] h-[600px] bg-purple-600 rounded-full blur-[180px] opacity-40"></div>
+    <div class="absolute top-40 -left-32 w-[500px] h-[500px] bg-cyan-500 rounded-full blur-[160px] opacity-30"></div>
+
+    <div class="relative max-w-7xl mx-auto px-8 py-32 grid md:grid-cols-2 gap-16 items-center">
+        <div>
+            <span class="text-cyan-400 uppercase tracking-widest">Desarrollo Web</span>
+            <h2 class="text-6xl font-extrabold mt-4 mb-6 leading-tight">
+                El DOM
+            </h2>
+            <p class="text-xl text-gray-300">
+                El motor invisible que transforma el código en experiencias interactivas.
+            </p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+             class="rounded-3xl shadow-2xl border border-white/10">
+    </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-20 items-center">
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+         class="rounded-3xl shadow-xl">
+
+    <div>
+        <h2 class="text-4xl font-bold text-cyan-400 mb-6">¿Qué es el DOM?</h2>
+        <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+            El <strong>Document Object Model</strong> representa el documento HTML como un
+            árbol de nodos que puede ser recorrido y manipulado mediante JavaScript.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed">
+            Es la base de la interactividad, la experiencia del usuario y las aplicaciones web modernas.
+        </p>
+    </div>
+</section>
+
+<section class="py-20 text-center bg-gradient-to-r from-purple-600/20 to-cyan-500/20">
+    <p class="text-3xl font-light max-w-4xl mx-auto">
+        El DOM conecta la lógica del código con la experiencia del usuario.
+    </p>
+</section>
+
+<section class="max-w-7xl mx-auto px-8 py-24">
+    <h2 class="text-4xl font-bold text-yellow-600 mb-16 text-center">
+        ¿Cómo funciona?
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-12">
+        <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+            <h3 class="text-2xl font-semibold mb-3 text-red-500">Estructura</h3>
+            <p>El navegador transforma el HTML en nodos jerárquicos.</p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+            <h3 class="text-2xl font-semibold mb-3 text-red-500">Manipulación</h3>
+            <p>JavaScript accede a los nodos para modificar contenido y estilos.</p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+            <h3 class="text-2xl font-semibold mb-3 text-red-500">Eventos</h3>
+            <p>Responde a clics, teclas y acciones del usuario.</p>
+        </div>
+    </div>
+</section>
+
+<!--carrusel-->
+<section class="max-w-7xl mx-auto px-8 py-24">
+    <h2 class="text-4xl font-bold text-yellow-600 mb-10 text-center">
+        EL DESARROLLO WEB ES EL PLUS DEL MAÑANA
+    </h2>
+
+    <div id="default-carousel" class="relative" data-carousel="slide">
+        <div class="relative h-80 md:h-96 overflow-hidden rounded-3xl border border-white/10">
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                     class="absolute w-full h-full object-cover">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998"
+                     class="absolute w-full h-full object-cover">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+                     class="absolute w-full h-full object-cover">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--FOOTER -->
+<footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-8 py-16 grid md:grid-cols-3 gap-12">
+        <div>
+            <h3 class="text-xl font-bold text-white mb-4">Proyecto DOM</h3>
+            <p class="text-gray-400">
+                Presentación moderna sobre el DOM en el desarrollo web.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold text-white mb-4">Tecnologías</h3>
+            <ul class="space-y-2 text-gray-400">
+                <li>HTML5</li>
+                <li>Tailwind CSS</li>
+                <li>Flowbite</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold text-white mb-4">Autor</h3>
+            <p class="text-gray-400">J.Vega</p>
+            <p class="text-gray-400">Desarrollo de Software</p>
+            <p class="text-gray-400">ITSQMET-2026</p>
+        </div>
+    </div>
+
+    <div class="text-center py-4 text-gray-500 text-sm">
+        © 2026 · ACTIVIDAD AUTONOMA IMPARTIDA POR LA ING. MARCE
+    </div>
+</footer>
+<div class="text-center pb-6 text-gray-500 text-xs max-w-4xl mx-auto px-6">
+    <p class="italic">
+        La información presentada en este proyecto está basada en las páginas 40 a 44 del libro
+        <strong>“Programación de Páginas Web con JavaScript y PHP”</strong>,
+        de la autora <strong>Mercedes Escarcena</strong>, y ha sido adaptada con fines
+        académicos para evitar el plagio.
+    </p>
+</div>
+
+<!-- Flowbite JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+</body>
+</html>
